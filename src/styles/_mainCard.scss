@@ -1,0 +1,51 @@
+/* Hero Card */
+.hero-card {
+  margin-top: 105px;
+  margin-left: 130px;
+  height: 420px;
+  width: 500px;
+  background-color: rgba(255, 255, 255, 0.3);
+  text-align: left;
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+}
+.hero-card-container {
+  padding-top: 26px;
+  padding-left: 26px;
+  padding-right: 26px;
+}
+.hero-card-p {
+  font-size: 13pt;
+}
+.hero-card-title {
+  font-size: 45pt;
+}
+.hero-card-moreInfo {
+  line-height: 4;
+}
+
+.hero-card-like-button {
+  background-color: rgb(113, 179, 209);
+  width: 50%;
+  height: 60px;
+  border: none;
+  margin-top: 5px;
+  float: left;
+}
+.hero-card-unlike-button {
+  background-color: goldenrod;
+  width: 50%;
+  height: 60px;
+  border: none;
+  margin-top: 5px;
+  float: left;
+}
+
+.fa-thumbs- {
+  &down {
+    font-size: 2rem;
+  }
+  &up {
+    font-size: 2rem;
+  }
+}

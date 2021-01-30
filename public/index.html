@@ -5,9 +5,53 @@
     <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="description" content="Mauricio Salazar Test" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <script
+      defer
+      src="https://use.fontawesome.com/releases/v5.15.2/js/all.js"
+      integrity="sha384-vuFJ2JiSdUpXLKGK+tDteQZBqNlMwAjhZ3TvPaDfN9QmbPb7Q8qUpbSNapQev3YF"
+      crossorigin="anonymous"
+    ></script>
     <title>React App</title>
   </head>
   <body>
+    <!-- Hero -->
+    <div class="hero">
+      <div class="header">
+        <h1 class="hero-title">Rule of Thumb.</h1>
+        <nav class="hero-nav">
+          <a class="nav-item" href="#">Past Trials</a>
+          <a class="nav-item" href="#">How It Work</a>
+          <a class="nav-item" href="#">Log in / Sing Up</a>
+          <a class="nav-item" href="#"><i class="fas fa-search"></i></a>
+        </nav>
+      </div>
+      <!-- Hero Card -->
+      <div class="hero-card">
+        <div class="hero-card-container">
+          <p class="hero-card-p">What´s your opinion on</p>
+          <h1 class="hero-card-title">Pope Francis?</h1>
+          <p class="hero-card-p">
+            He´s talking tough on clergy sexual abuse, but is he just another
+            papal pervert protector? (thumbs down) or a true pedophile punishing
+            pontiff? (thumbs up)
+          </p>
+          <span class="hero-card-moreInfo">
+            W <a href="#"> More Information</a>
+          </span>
+          <h3>What´s your veredict?</h3>
+        </div>
+        <span>
+          <button class="hero-card-like-button">
+            <i class="far fa-thumbs-up"></i>
+          </button>
+          <button class="hero-card-unlike-button">
+            <i class="far fa-thumbs-down"></i>
+          </button>
+        </span>
+      </div>
+    </div>
+
     <div id="root"></div>
   </body>
 </html>
