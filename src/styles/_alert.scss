@@ -1,0 +1,33 @@
+.alert {
+  background-color: rgb(207, 206, 206);
+  margin-top: 75px;
+  margin-left: 130px;
+  margin-right: 130px;
+  height: 80px;
+  padding: 22px;
+  padding-right: 70px;
+  display: flex;
+  &__leftDiv {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 7px;
+  }
+  &__rigthDiv {
+    color: dimgray;
+    font-size: 17px;
+    margin-left: 20px;
+    display: flex;
+    align-items: center;
+  }
+  &__speakDiv {
+    color: dimgray;
+    font-size: 22px;
+  }
+
+  &__beCountedDiv {
+    color: black;
+    font-size: 40px;
+    font-weight: bolder;
+  }
+}
