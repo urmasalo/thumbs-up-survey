@@ -1,5 +1,10 @@
 @import-normalize; /* bring in normalize.css styles */
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@100;400&display=swap");
+@import "../src/styles/alert";
+@import "../src/styles/header";
+@import "../src/styles/heroCard";
+@import "../src/styles/mainStage";
+@import "../src/styles/submitName";
 
 body {
   margin: 0;

@@ -1,0 +1,31 @@
+.submit-container {
+  display: flex;
+  margin-left: 130px;
+  margin-right: 130px;
+  background-image: url(../images/crowds.jpg);
+  height: 80px;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 30px;
+  padding-right: 25px;
+
+  &__paragraph {
+    color: black;
+    font-size: 40px;
+    font-weight: 400;
+  }
+  &__button {
+    //   maybe i need it in the future
+  }
+}
+.submit-button {
+  background-color: transparent;
+  border: 2px solid black;
+  cursor: pointer;
+  color: black;
+  font-size: 13px;
+  text-decoration: none;
+  height: 50px;
+  width: 207px;
+  font-size: 20px;
+}
