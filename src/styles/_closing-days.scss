@@ -23,7 +23,7 @@
   }
 }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: $breakpoint-mobile) {
   .closing-days {
     align-items: center;
     font-size: 10px;

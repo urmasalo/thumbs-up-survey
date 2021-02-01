@@ -1,35 +1,38 @@
-.submit-container {
-  display: flex;
-  background-image: url(../images/crowds.jpg);
-  align-items: center;
-  justify-content: space-between;
-  padding-left: 30px;
-  padding-right: 25px;
+.submit {
+  &-container {
+    display: flex;
+    background-image: url(../images/crowds.jpg);
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 30px;
+    padding-right: 25px;
 
-  &__paragraph {
+    &__paragraph {
+      color: $theme-dark-gray;
+      font-size: 40px;
+      font-weight: 200;
+    }
+  }
+  &-button {
+    background-color: transparent;
+    border: 3px solid $theme-dark-gray;
     color: $theme-dark-gray;
-    font-size: 40px;
-    font-weight: 200;
+    font-size: 13px;
+    text-decoration: none;
+    height: 50px;
+    font-size: 20px;
+    padding-left: 25px;
+    padding-right: 25px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    &:hover {
+      background-color: $theme-dark-gray;
+      color: $theme-ligth-gray;
+    }
   }
-  &__button {
-    //   maybe i need it in the future
-  }
-}
-.submit-button {
-  background-color: transparent;
-  border: 3px solid $theme-dark-gray;
-  color: $theme-dark-gray;
-  font-size: 13px;
-  text-decoration: none;
-  height: 50px;
-  font-size: 20px;
-  padding-left: 25px;
-  padding-right: 25px;
-  margin-top: 25px;
-  margin-bottom: 25px;
 }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: $breakpoint-mobile) {
   .submit-container {
     display: flex;
     flex-direction: column;

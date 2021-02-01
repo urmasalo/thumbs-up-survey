@@ -30,10 +30,13 @@
     border: none;
     margin-left: 15px;
     font-size: 25px;
+    &:hover {
+      color: $theme-white;
+    }
   }
 }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: $breakpoint-mobile) {
   .alert {
     flex-direction: column;
     &__leftDiv {

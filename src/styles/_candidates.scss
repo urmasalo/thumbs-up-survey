@@ -13,6 +13,16 @@
     justify-content: flex-end;
     flex-direction: column;
     margin: 30px 0px;
+    position: relative;
+    &__image {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      left: 0;
+      top: 0;
+      object-fit: cover;
+      z-index: -1;
+    }
     &__title {
       color: $theme-white;
     }
@@ -25,7 +35,7 @@
       color: $theme-white;
     }
 
-    &__viewReport {
+    &__viewReport-button {
       background-color: transparent;
       border: 1px solid white;
       cursor: pointer;
@@ -36,6 +46,10 @@
       height: 40px;
       width: 155px;
       color: $theme-white;
+      &:hover {
+        background-color: $theme-white;
+        color: $theme-dark-gray;
+      }
     }
 
     &__divisor {
@@ -79,7 +93,7 @@
   }
 }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: $breakpoint-mobile) {
   .candidates {
     flex-direction: column;
     &__title {
@@ -90,17 +104,4 @@
       width: 100%;
     }
   }
-}
-
-#kanye {
-  background-image: url(../images/kanye_west.jpg);
-}
-#mark {
-  background-image: url(../images/facebook.jpg);
-}
-#cristina {
-  background-image: url(../images/cristina_fernández.jpg);
-}
-#malala {
-  background-image: url(../images/malala_yousafzai.jpg);
 }

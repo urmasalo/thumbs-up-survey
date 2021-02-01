@@ -3,7 +3,6 @@
   margin-top: 40px;
   padding-top: 40px;
   margin-bottom: 40px;
-
   border-top: 2px dotted $theme-dark-gray;
   display: flex;
   justify-content: space-between;
@@ -13,14 +12,17 @@
       text-decoration: none;
       color: $theme-dark-gray;
       margin-right: 20px;
+      &:hover {
+        text-decoration: $theme-dark-gray underline;
+      }
     }
   }
   &__right-side {
     a {
       color: $theme-dark-gray;
-      font-size: 20px;
+      font-size: 30px;
       margin-left: 20px;
-      :hover {
+      &:hover {
         color: blue;
       }
     }
@@ -30,7 +32,7 @@
   }
 }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: $breakpoint-mobile) {
   .footer-container {
     flex-direction: column;
     justify-content: space-between;
