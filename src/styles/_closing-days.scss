@@ -1,7 +1,7 @@
 .closing-days {
+  display: flex;
   &__left {
     background-color: grey;
-    float: left;
     width: 30%;
     text-align: right;
 
@@ -11,7 +11,6 @@
   }
   &__rigth {
     background-color: whitesmoke;
-    float: right;
     width: 70%;
 
     h3 {
@@ -21,5 +20,12 @@
     b {
       color: dimgray;
     }
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .closing-days {
+    align-items: center;
+    font-size: 10px;
   }
 }

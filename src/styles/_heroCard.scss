@@ -12,6 +12,7 @@
   }
   &__more-info {
     line-height: 4;
+    color: $theme-white;
   }
   &__pre-title {
     margin-top: 20px;
@@ -61,5 +62,11 @@
         }
       }
     }
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .hero-card {
+    width: 100%;
   }
 }

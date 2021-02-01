@@ -79,6 +79,19 @@
   }
 }
 
+@media only screen and (max-width: 400px) {
+  .candidates {
+    flex-direction: column;
+    &__title {
+      padding-top: 20px;
+      text-align: center;
+    }
+    &__card {
+      width: 100%;
+    }
+  }
+}
+
 #kanye {
   background-image: url(../images/kanye_west.jpg);
 }

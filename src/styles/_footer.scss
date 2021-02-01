@@ -29,3 +29,24 @@
     align-items: center;
   }
 }
+
+@media only screen and (max-width: 400px) {
+  .footer-container {
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    padding: 20px;
+    &__left-side {
+      a {
+        font-size: 13px;
+        margin: 0;
+        padding: 0 8px;
+        width: 90%;
+      }
+    }
+    &__right-side {
+      margin-top: 20px;
+    }
+  }
+}

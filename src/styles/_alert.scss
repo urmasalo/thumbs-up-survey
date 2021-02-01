@@ -32,3 +32,28 @@
     font-size: 25px;
   }
 }
+
+@media only screen and (max-width: 400px) {
+  .alert {
+    flex-direction: column;
+    &__leftDiv {
+      flex-direction: column;
+      margin-bottom: 10px;
+      text-align: justify;
+    }
+    &__rigthDiv {
+      text-align: center;
+      margin: 0;
+    }
+
+    &__beCountedDiv {
+      font-size: 35px;
+    }
+    &__close-button {
+      background-color: transparent;
+      border: none;
+      margin-top: 15px;
+      font-size: 25px;
+    }
+  }
+}

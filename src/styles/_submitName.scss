@@ -1,8 +1,6 @@
 .submit-container {
   display: flex;
-
   background-image: url(../images/crowds.jpg);
-  height: 80px;
   align-items: center;
   justify-content: space-between;
   padding-left: 30px;
@@ -27,4 +25,22 @@
   font-size: 20px;
   padding-left: 25px;
   padding-right: 25px;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+@media only screen and (max-width: 400px) {
+  .submit-container {
+    display: flex;
+    flex-direction: column;
+
+    &__paragraph {
+      margin-top: 20px;
+      font-size: 20px;
+      text-align: center;
+    }
+  }
+  .submit-button {
+    margin-top: 15px;
+  }
 }
