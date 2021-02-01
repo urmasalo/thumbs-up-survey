@@ -1,0 +1,31 @@
+.footer-container {
+  font-size: 15px;
+  margin-top: 40px;
+  padding-top: 40px;
+  margin-bottom: 40px;
+
+  border-top: 2px dotted $theme-dark-gray;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  &__left-side {
+    a {
+      text-decoration: none;
+      color: $theme-dark-gray;
+      margin-right: 20px;
+    }
+  }
+  &__right-side {
+    a {
+      color: $theme-dark-gray;
+      font-size: 20px;
+      margin-left: 20px;
+      :hover {
+        color: blue;
+      }
+    }
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+}

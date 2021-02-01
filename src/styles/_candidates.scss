@@ -1,21 +1,30 @@
-.mainStage {
+.candidates {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  &__title {
+    color: $theme-dark-gray;
+    width: 100%;
+  }
   &__card {
-    width: 490px;
-    height: 550px;
+    padding-top: 320px;
+    width: 47%;
     display: flex;
     justify-content: flex-end;
     flex-direction: column;
     margin: 30px 0px;
+    &__title {
+      color: $theme-white;
+    }
 
     &__description {
       font-size: 15px;
       font-weight: 400;
       margin-left: 40px;
       margin-right: 90px;
+      color: $theme-white;
     }
+
     &__viewReport {
       background-color: transparent;
       border: 1px solid white;
@@ -26,24 +35,30 @@
       margin-left: 40px;
       height: 40px;
       width: 155px;
+      color: $theme-white;
     }
+
     &__divisor {
       display: flex;
       margin-bottom: 40px;
       justify-content: space-between;
     }
+
     &__date {
       text-align: right;
       margin: 0;
       margin-right: 20px;
+      color: $theme-white;
     }
   }
   &__thumbsIndicator {
     background-color: $theme-orange;
   }
+
   &__graphic-report {
     display: flex;
     height: 50px;
+    color: $theme-white;
 
     &__thumbs-up {
       display: flex;
@@ -63,12 +78,7 @@
     }
   }
 }
-.mainStage__title {
-  font-weight: 600;
-  color: dimgray;
 
-  margin-top: 80px;
-}
 #kanye {
   background-image: url(../images/kanye_west.jpg);
 }
