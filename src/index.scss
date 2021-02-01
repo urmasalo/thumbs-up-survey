@@ -1,22 +1,11 @@
 @import-normalize; /* bring in normalize.css styles */
-@import url("https://fonts.googleapis.com/css2?family=Lato:wght@100;400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@200;300;400&display=swap");
+@import "../src/styles/variables";
+@import "../src/styles/globals";
 @import "../src/styles/alert";
 @import "../src/styles/header";
 @import "../src/styles/heroCard";
 @import "../src/styles/mainStage";
 @import "../src/styles/submitName";
-
-body {
-  margin: 0;
-  font-family: "Lato", sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-* {
-  color: white;
-}
-a {
-  text-decoration: none;
-  color: white;
-}
+@import "../src/styles/closing-days";
+@import "../src/styles/hero";

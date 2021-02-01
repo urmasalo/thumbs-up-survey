@@ -1,22 +1,33 @@
-///////////////////////* Hero */
-.hero {
-  background-image: url("../images/pope_francis.jpg");
-  height: 800px;
-  padding-top: 50px;
-}
 .header {
   justify-content: space-between;
   display: flex;
-}
+  &__nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    &__list {
+      list-style: none;
+      display: flex;
+      flex-direction: row;
+      &-item {
+        margin-left: 20px;
+        a {
+          text-decoration: none;
 
-.nav-item {
-  padding: 15px;
-}
-.hero-title {
-  margin-left: 130px;
-  margin-top: 0;
-  font-size: 40px;
-}
-.hero-nav {
-  padding-right: 130px;
+          color: $theme-white;
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
+  &__title {
+    color: $theme-white;
+  }
+  &__button-search {
+    color: $theme-white;
+    font-size: 20px;
+    margin-left: 20px;
+  }
 }

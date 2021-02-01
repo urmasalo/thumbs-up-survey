@@ -12,166 +12,250 @@
       integrity="sha384-vuFJ2JiSdUpXLKGK+tDteQZBqNlMwAjhZ3TvPaDfN9QmbPb7Q8qUpbSNapQev3YF"
       crossorigin="anonymous"
     ></script>
-    <title>React App</title>
+    <title>Mauricio´s Test</title>
   </head>
+
   <body>
-    <!-- Hero -->
+    <!-- Header -->
     <div class="hero">
-      <div class="header">
-        <h1 class="hero-title">Rule of Thumb.</h1>
-        <nav class="hero-nav">
-          <a class="nav-item" href="#">Past Trials</a>
-          <a class="nav-item" href="#">How It Work</a>
-          <a class="nav-item" href="#">Log in / Sing Up</a>
-          <a class="nav-item" href="#"><i class="fas fa-search"></i></a>
-        </nav>
-      </div>
-      <!-- Hero Card -->
-      <div class="hero-card">
-        <div class="hero-card-container">
-          <p class="hero-card-p">What´s your opinion on</p>
-          <h1 class="hero-card-title">Pope Francis?</h1>
-          <p class="hero-card-p">
-            He´s talking tough on clergy sexual abuse, but is he just another
-            papal pervert protector? (thumbs down) or a true pedophile punishing
-            pontiff? (thumbs up)
-          </p>
-          <span class="hero-card-moreInfo">
-            W <a href="#"> More Information</a>
-          </span>
-          <h3>What´s your veredict?</h3>
+      <div class="container">
+        <header class="header">
+          <h1 class="header__title">Rule of Thumb.</h1>
+          <nav class="header__nav">
+            <ul class="header__nav__list">
+              <li class="header__nav__list-item">
+                <a href="#">Past Trials</a>
+              </li>
+              <li class="header__nav__list-item">
+                <a href="#">How It Work</a>
+              </li>
+              <li class="header__nav__list-item">
+                <a href="#">Log in / Sing Up</a>
+              </li>
+            </ul>
+            <a class="header__button-search" href="#"
+              ><i class="fas fa-search"></i
+            ></a>
+          </nav>
+        </header>
+
+        <!-- Hero Card -->
+        <div class="hero-card">
+          <div class="hero-card__container">
+            <span class="hero-card__pre-title">What´s your opinion on</span>
+            <h1 class="hero-card__title">Pope Francis?</h1>
+            <p class="hero-card__paragraph">
+              He´s talking tough on clergy sexual abuse, but is he just another
+              papal pervert protector? (thumbs down) or a true pedophile
+              punishing pontiff? (thumbs up)
+            </p>
+            <a href="#" class="hero-card__more-info">
+              <i class="fab fa-wikipedia-w"></i>
+              <span> More Information</span>
+            </a>
+            <h3 class="hero-card__last-text">What´s your veredict?</h3>
+          </div>
+          <!-- BUTTONS -->
+          <div class="hero-card__button-container">
+            <button class="hero-card__button hero-card__button--like">
+              <i class="far fa-thumbs-up"></i>
+            </button>
+            <button class="hero-card__button hero-card__button--dislike">
+              <i class="far fa-thumbs-down"></i>
+            </button>
+          </div>
         </div>
-        <span>
-          <button class="hero-card-like-button">
-            <i class="far fa-thumbs-up"></i>
-          </button>
-          <button class="hero-card-unlike-button">
-            <i class="far fa-thumbs-down"></i>
-          </button>
-        </span>
+        <!-- CLOSING DAYS -->
       </div>
       <div class="closing-days">
         <div class="closing-days__left"><h3>CLOSING IN</h3></div>
         <div class="closing-days__rigth">
-          <h3><b>22</b> days</h3></div>
+          <h3><b>22</b> days</h3>
         </div>
       </div>
     </div>
-    <div class="alert">
-      <div class="alert__leftDiv">
-        <div class="alert__speakDiv">Speak out. Be Heard.</div>
-        <div class="alert__beCountedDiv">Be counted</div>
-      </div>
-      <div class="alert__rigthDiv">
-        Rule of Thumb is a crowd sourcer court of public opinion where anyono and everyone can speak aout and speak freely. <br>
-        It´s easy: You share your opinion, we analyze and put the data in a public report.
-      </div>
-      <button class="alert__close-button"><i class="fas fa-times" id="times"></i>
-      </button>
-    </div>
 
-
-
-    <h1 class="mainStage__title">Previus Rulings</h1>
-
-
-
-    <div class="mainStage">
-      <!-- KANYE WEST -->
-      <div class="mainStage__card" id="kanye">
-        <h1 class="mainStage__card__title"> <span class="mainStage__thumbsIndicator"><i class="far fa-thumbs-up"></i></span> Kanye West</h1>
-        <h3 class="mainStage__card__description"> Vestibulum diam ante, porttitor a odio eget, rhoncus neque. Aenean eu velit libero.</h3>
-        <div class="mainStage__card__divisor">        
-          <button class="mainStage__card__viewReport">View Full Report</button>
-          <h4 class="mainStage__card__date"> 1 month ago <br>in Entertainment</h4>
+    <main>
+      <div class="container">
+        <div class="alert">
+          <div class="alert__leftDiv">
+            <div class="alert__speakDiv">Speak out. Be Heard.</div>
+            <div class="alert__beCountedDiv">Be counted</div>
+          </div>
+          <div class="alert__rigthDiv">
+            Rule of Thumb is a crowd sourcer court of public opinion where
+            anyono and everyone can speak aout and speak freely. <br />
+            It´s easy: You share your opinion, we analyze and put the data in a
+            public report.
+          </div>
+          <button class="alert__close-button">
+            <i class="fas fa-times" id="times"></i>
+          </button>
         </div>
-        <div class="mainStage__graphic-report">
-          <div class="mainStage__graphic-report__thumbs-up">
-            <i class="far fa-thumbs-up"></i>
-            64%
-          </div>
-          <div class="mainStage__graphic-report__thumbs-down">
-            <i class="far fa-thumbs-down"></i>
-            36%
-          </div>
-          </div>
-        </div>
-      <!-- MARK ZUCKERBERG -->
-      <div class="mainStage__card" id="mark">
-        <h1 class="mainStage__card__title"> <span class="mainStage__thumbsIndicator"><i class="far fa-thumbs-up"></i></span> Mark Zuckerberg</h1>
-        <h3 class="mainStage__card__description"> Vestibulum diam ante, porttitor a odio eget, rhoncus neque. Aenean eu velit libero.</h3>
-        <div class="mainStage__card__divisor">        
-          <button class="mainStage__card__viewReport">View Full Report</button>
-          <h4 class="mainStage__card__date"> 1 month ago <br>in Business</h4>
-        </div>
-        <div class="mainStage__graphic-report">
-          <div class="mainStage__graphic-report__thumbs-up">
-            <i class="far fa-thumbs-up"></i>
-            64%
-          </div>
-          <div class="mainStage__graphic-report__thumbs-down">
-            <i class="far fa-thumbs-down"></i>
-            36%
-          </div>
-          </div>
       </div>
-      <!-- CRISTINA FERNANDEZ -->
-      <div class="mainStage__card" id="cristina">
-        <h1 class="mainStage__card__title"> <span class="mainStage__thumbsIndicator"><i class="far fa-thumbs-up"></i></span> Cristina Fernandez de Kirchner</h1>
-        <h3 class="mainStage__card__description"> Vestibulum diam ante, porttitor a odio eget, rhoncus neque. Aenean eu velit libero.</h3>
-        <div class="mainStage__card__divisor">        
-          <button class="mainStage__card__viewReport">View Full Report</button>
-          <h4 class="mainStage__card__date"> 1 month ago <br>in Politics</h4>
+
+      <section class="candidates">
+        <div class="container">
+          <h1 class="mainStage__title">Previous Rulings</h1>
+
+          <!-- KANYE WEST -->
+          <div class="mainStage__card" id="kanye">
+            <h1 class="mainStage__card__title">
+              <span class="mainStage__thumbsIndicator"
+                ><i class="far fa-thumbs-up"></i
+              ></span>
+              Kanye West
+            </h1>
+            <h3 class="mainStage__card__description">
+              Vestibulum diam ante, porttitor a odio eget, rhoncus neque. Aenean
+              eu velit libero.
+            </h3>
+            <div class="mainStage__card__divisor">
+              <button class="mainStage__card__viewReport">
+                View Full Report
+              </button>
+              <h4 class="mainStage__card__date">
+                1 month ago <br />in Entertainment
+              </h4>
+            </div>
+            <div class="mainStage__graphic-report">
+              <div class="mainStage__graphic-report__thumbs-up">
+                <i class="far fa-thumbs-up"></i>
+                64%
+              </div>
+              <div class="mainStage__graphic-report__thumbs-down">
+                <i class="far fa-thumbs-down"></i>
+                36%
+              </div>
+            </div>
+          </div>
+          <!-- MARK ZUCKERBERG -->
+          <div class="mainStage__card" id="mark">
+            <h1 class="mainStage__card__title">
+              <span class="mainStage__thumbsIndicator"
+                ><i class="far fa-thumbs-up"></i
+              ></span>
+              Mark Zuckerberg
+            </h1>
+            <h3 class="mainStage__card__description">
+              Vestibulum diam ante, porttitor a odio eget, rhoncus neque. Aenean
+              eu velit libero.
+            </h3>
+            <div class="mainStage__card__divisor">
+              <button class="mainStage__card__viewReport">
+                View Full Report
+              </button>
+              <h4 class="mainStage__card__date">
+                1 month ago <br />in Business
+              </h4>
+            </div>
+            <div class="mainStage__graphic-report">
+              <div class="mainStage__graphic-report__thumbs-up">
+                <i class="far fa-thumbs-up"></i>
+                64%
+              </div>
+              <div class="mainStage__graphic-report__thumbs-down">
+                <i class="far fa-thumbs-down"></i>
+                36%
+              </div>
+            </div>
+          </div>
+          <!-- CRISTINA FERNANDEZ -->
+          <div class="mainStage__card" id="cristina">
+            <h1 class="mainStage__card__title">
+              <span class="mainStage__thumbsIndicator"
+                ><i class="far fa-thumbs-up"></i
+              ></span>
+              Cristina Fernandez de Kirchner
+            </h1>
+            <h3 class="mainStage__card__description">
+              Vestibulum diam ante, porttitor a odio eget, rhoncus neque. Aenean
+              eu velit libero.
+            </h3>
+            <div class="mainStage__card__divisor">
+              <button class="mainStage__card__viewReport">
+                View Full Report
+              </button>
+              <h4 class="mainStage__card__date">
+                1 month ago <br />in Politics
+              </h4>
+            </div>
+            <div class="mainStage__graphic-report">
+              <div class="mainStage__graphic-report__thumbs-up">
+                <i class="far fa-thumbs-up"></i>
+                64%
+              </div>
+              <div class="mainStage__graphic-report__thumbs-down">
+                <i class="far fa-thumbs-down"></i>
+                36%
+              </div>
+            </div>
+          </div>
+          <!-- MALALA YOUSAFZAI -->
+          <div class="mainStage__card" id="malala">
+            <h1 class="mainStage__card__title">
+              <span class="mainStage__thumbsIndicator"
+                ><i class="far fa-thumbs-up"></i
+              ></span>
+              Malala Yousafzai
+            </h1>
+            <h3 class="mainStage__card__description">
+              Vestibulum diam ante, porttitor a odio eget, rhoncus neque. Aenean
+              eu velit libero.
+            </h3>
+            <div class="mainStage__card__divisor">
+              <button class="mainStage__card__viewReport">
+                View Full Report
+              </button>
+              <h4 class="mainStage__card__date">
+                1 month ago <br />in Politics
+              </h4>
+            </div>
+            <div class="mainStage__graphic-report">
+              <div class="mainStage__graphic-report__thumbs-up">
+                <i class="far fa-thumbs-up"></i>
+                64%
+              </div>
+              <div class="mainStage__graphic-report__thumbs-down">
+                <i class="far fa-thumbs-down"></i>
+                36%
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="mainStage__graphic-report">
-          <div class="mainStage__graphic-report__thumbs-up">
-            <i class="far fa-thumbs-up"></i>
-            64%
+      </section>
+
+      <section class="submit-candidate">
+        <div class="container">
+          <!-- SUBMIT NAME  -->
+          <div class="submit-container">
+            <div class="submit-container__paragraph">
+              Is there anyone you would want us to add ?
+            </div>
+            <div class="submit-container__button">
+              <button class="submit-button">Submit a Name</button>
+            </div>
           </div>
-          <div class="mainStage__graphic-report__thumbs-down">
-            <i class="far fa-thumbs-down"></i>
-            36%
-          </div>
-          </div>
-      </div>
-      <!-- MALALA YOUSAFZAI -->
-      <div class="mainStage__card" id="malala">
-        <h1 class="mainStage__card__title"> <span class="mainStage__thumbsIndicator"><i class="far fa-thumbs-up"></i></span> Malala Yousafzai</h1>
-        <h3 class="mainStage__card__description"> Vestibulum diam ante, porttitor a odio eget, rhoncus neque. Aenean eu velit libero.</h3>
-        <div class="mainStage__card__divisor">        
-          <button class="mainStage__card__viewReport">View Full Report</button>
-          <h4 class="mainStage__card__date"> 1 month ago <br>in Politics</h4>
         </div>
-        <div class="mainStage__graphic-report">
-          <div class="mainStage__graphic-report__thumbs-up">
-            <i class="far fa-thumbs-up"></i>
-            64%
-          </div>
-          <div class="mainStage__graphic-report__thumbs-down">
-            <i class="far fa-thumbs-down"></i>
-            36%
-          </div>
-          </div>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+
+    <footer>
+      <div class="container">
+        <div class="footer-container__left-side">
+          <a href="#">Terms and Conditions</a>
+          <a href="#">Privaci Policy</a>
+          <a href="#">Contact Us</a>
+        </div>
+        <div class="footer-container__right-side">
+          <h3>Follow Us</h3>
+          <a href="#"><i class="fab fa-facebook-square"></i> </a>
+          <a href="#"><i class="fab fa-twitter-square"></i></a>
+        </div>
       </div>
-    </div>
-
-
-
-
-
-
-
-
-
-
-<!-- SUBMIT NAME  -->
-<div class="submit-container">
-  <div class="submit-container__paragraph">Is there anyone you would want us to add ?</div>
-  <div class="submit-container__button" > 
-    <button class="submit-button">Submit a Name</button>
-  </div>
-</div>
-
+    </footer>
     <div id="root"></div>
   </body>
 </html>
