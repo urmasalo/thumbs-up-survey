@@ -5,13 +5,25 @@ const Candidates = ({image, name, description, last_update, categories }) => {
 
   const [likes, setLikes] = useState(0);
   const [dislikes, setDislikes] = useState(0);
-
-
+  let popularityPercentage = 0;
   const [vote, setVote ] = useState("");
 
   const changeHandler = (event) =>{
     setVote(event.target.value)
     }
+
+  const calculatePopularity = (_likes, _dislikes) => {
+    
+    if (_likes === 0 && _dislikes === 0){
+      return 0
+    } else if (_likes > 0 && _dislikes === 0) {
+      return 100
+    } else if (_dislikes> 0 && _likes === 0){
+      return 0
+    }
+    return Math.round(_likes * 100 / (_likes + _dislikes));
+  
+  }
   
   const submitVote = (event) => {
     event.preventDefault()
@@ -23,7 +35,8 @@ const Candidates = ({image, name, description, last_update, categories }) => {
 
   }
 
-  console.log(likes, dislikes)
+
+  console.log("likes :" + likes, "dislikes :" + dislikes, "popularityPercentage :" + calculatePopularity(likes, dislikes)) 
 
 
     return (
@@ -43,12 +56,6 @@ const Candidates = ({image, name, description, last_update, categories }) => {
          <h3 className="candidates__card__description">
           {description}
         </h3>
-
-
-
-
-
-
         <div className="candidates__card__divisor">
           <form className="candidates__card__form" onSubmit={submitVote}>
             <div onChange={changeHandler} className="candidates__card__form__vote">
@@ -62,28 +69,19 @@ const Candidates = ({image, name, description, last_update, categories }) => {
               <i className="far fa-thumbs-down"></i>
             </label>
             </div>
-
-
             <button type="submit" className="candidates__card__view-report-button">
                 Vote now
             </button>
           </form>
         </div>
-
-
-
-
-
-
-
         <div className="candidates__graphic-report">
           <div className="candidates__graphic-report__thumbs-up">
-            <i className="far fa-thumbs-up"></i>
-            64%
+            <i className="far fa-thumbs-up"> </i>
+            {(calculatePopularity(likes, dislikes))+ `%`}
           </div>
           <div className="candidates__graphic-report__thumbs-down">
             <i className="far fa-thumbs-down"></i>
-            36%
+            { ((calculatePopularity(likes, dislikes)-100)*-1)} %
           </div>
         </div>
       </div>
