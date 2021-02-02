@@ -33,7 +33,7 @@
     width: 50%;
     color: $theme-white;
     border: none;
-    padding: 0;
+    padding: 25px;
 
     &--like {
       background-color: rgba($theme-green, 0.8);
@@ -50,7 +50,6 @@
     &-container {
       display: flex;
       justify-content: space-between;
-      height: 80px;
       border: none;
       padding-bottom: 100px;
       .fa-thumbs- {

@@ -1,6 +1,8 @@
 .header {
   justify-content: space-between;
   display: flex;
+  position: relative;
+
   &__nav {
     display: flex;
     flex-direction: row;
