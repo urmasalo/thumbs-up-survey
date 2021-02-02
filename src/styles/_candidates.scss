@@ -54,7 +54,7 @@
       color: $theme-white;
     }
 
-    &__viewReport-button {
+    &__view-report-button {
       background-color: transparent;
       border: 1px solid white;
       cursor: pointer;
@@ -83,12 +83,45 @@
       margin-left: 40px;
       margin-top: 5px;
     }
+    &__form {
+      justify-content: center;
+      display: flex;
+      &__radio:checked + .candidates__thumbs-indicator {
+        border: solid 2px $theme-white;
+      }
+      &__vote {
+        display: flex;
+      }
+    }
+  }
+  &__thumbs-status {
+    background-color: $theme-orange;
+    color: $theme-white;
+    font-size: 20px;
+    width: 34px;
+    height: 34px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 8px;
+    &__up {
+      background-color: $theme-green;
+      margin-right: 10px;
+    }
+    &__down {
+      background-color: $theme-orange;
+      margin-right: 10px;
+    }
   }
   &__thumbs-indicator {
     background-color: $theme-orange;
     color: $theme-white;
     font-size: 20px;
-    padding: 5px;
+    width: 34px;
+    height: 34px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     &__up {
       background-color: $theme-green;
       margin-right: 10px;

@@ -5,8 +5,7 @@
 function App() {
   return (
     <div className="App">
-      {
-        candidates.data.map(item => 
+      { candidates.data.map(item => 
           <Candidate key={item.id} {...item}/> 
         )}
     </div>
