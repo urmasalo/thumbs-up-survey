@@ -1,5 +1,7 @@
 # Mauricio Salazar Test
 
+In order to test “Layout HTML-CSS” use “nom run start” on terminal
+
 ## Available Scripts
 
 In the project directory, you can run:
