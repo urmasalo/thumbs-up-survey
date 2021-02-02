@@ -7,10 +7,8 @@ function App() {
     <div className="App">
       {
         candidates.data.map(item => 
-          <Candidate key={item.id} {...item}/>
-          
+          <Candidate key={item.id} {...item}/> 
         )}
-
     </div>
   );
 }
