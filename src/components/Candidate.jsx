@@ -1,7 +1,14 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import calculatePopularity from "../utils/calculatePopularity";
 
-const Candidate = ({ image, name, description, last_update, categories }) => {
+const Candidate = ({
+  image,
+  name,
+  description,
+  last_update,
+  categories,
+  id,
+}) => {
   const [likes, setLikes] = useState(0);
   const [dislikes, setDislikes] = useState(0);
   const [vote, setVote] = useState("");
@@ -10,6 +17,20 @@ const Candidate = ({ image, name, description, last_update, categories }) => {
     popularity > 0 ? 100 - popularity : dislikes > 0 ? 100 : 0;
   const isPopular = popularity >= unpopularity ? true : false;
   const [hasVoted, setHasVoted] = useState(false);
+
+  useEffect(() => {
+    const likesFromStorage = parseInt(localStorage.getItem(`likes-${id}`));
+    setLikes(likesFromStorage);
+    const dislikesFromStorage = parseInt(
+      localStorage.getItem(`dislikes-${id}`)
+    );
+    setDislikes(dislikesFromStorage);
+  }, [id]);
+
+  useEffect(() => {
+    localStorage.setItem(`likes-${id}`, likes);
+    localStorage.setItem(`dislikes-${id}`, dislikes);
+  }, [likes, dislikes, id]);
 
   const changeHandler = (event) => {
     setVote(event.target.value);
@@ -49,7 +70,14 @@ const Candidate = ({ image, name, description, last_update, categories }) => {
         </span>
       </h4>
       <h3 className="candidates__card__description">
-        {hasVoted ? "Thanks you for voting!" : description}
+        {hasVoted ? (
+          <span>
+            Thank you for voting! <br />
+            <br />
+          </span>
+        ) : (
+          description
+        )}
       </h3>
       <div className="candidates__card__divisor">
         {hasVoted ? (
