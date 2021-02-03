@@ -34,6 +34,7 @@
     color: $theme-white;
     border: none;
     padding: 25px;
+    cursor: pointer;
 
     &--like {
       background-color: rgba($theme-green, 0.8);

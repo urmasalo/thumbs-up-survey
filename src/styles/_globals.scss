@@ -19,3 +19,8 @@ body {
 .hide {
   display: none;
 }
+
+// this is the original icon but rotated to match the given desing
+.fa-thumbs-up.inverted {
+  transform: rotate(180deg);
+}

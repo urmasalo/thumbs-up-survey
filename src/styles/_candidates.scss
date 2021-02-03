@@ -72,7 +72,7 @@
     &__divisor {
       display: flex;
       margin-bottom: 40px;
-      margin-left: 60px;
+      margin-left: 40px;
       align-items: center;
     }
 
@@ -82,6 +82,9 @@
       margin: 0;
       margin-left: 40px;
       margin-top: 5px;
+      &__categories {
+        font-weight: 100;
+      }
     }
     &__form {
       justify-content: center;
@@ -123,6 +126,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
     &__up {
       background-color: $theme-green;
       margin-right: 10px;
@@ -134,27 +138,37 @@
   }
 
   &__graphic-report {
-    display: flex;
+    position: relative;
     height: 50px;
     color: $theme-white;
-
-    &__thumbs-up {
+    &__bars {
       display: flex;
-      align-items: center;
+      position: absolute;
+      width: 100%;
+      left: 0;
+      bottom: 0;
+    }
+    &__values {
+      position: relative;
+      display: flex;
+      justify-content: space-between;
+      height: 50px;
+      font-size: 30px;
+      padding: 8px;
+    }
+
+    &__sign {
+      font-size: 20px;
+    }
+    &__thumbs-up {
       background-color: rgba($theme-green, 0.8);
       height: 50px;
-      width: 64%;
-      padding-left: 20px;
-      font-size: 30px;
+      width: 50%;
     }
     &__thumbs-down {
-      display: flex;
-      align-items: center;
       background-color: rgba($theme-orange, 0.8);
       height: 50px;
-      width: 36%;
-      padding-left: 20px;
-      font-size: 30px;
+      width: 50%;
     }
   }
 }
