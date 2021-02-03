@@ -8,6 +8,7 @@ const calculatePopularity = (likes, dislikes) => {
       return 0
     }
     return Math.round(likes * 100 / (likes + dislikes));
+  
   }
 
   export default calculatePopularity;

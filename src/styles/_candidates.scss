@@ -98,7 +98,7 @@
     }
   }
   &__thumbs-status {
-    background-color: $theme-orange;
+    background-color: $theme-green;
     color: $theme-white;
     font-size: 20px;
     width: 34px;
@@ -171,6 +171,11 @@
       width: 50%;
     }
   }
+}
+
+.unpopular-container {
+  background-color: $theme-orange;
+  transform: rotate(180deg);
 }
 
 @media only screen and (max-width: $breakpoint-mobile) {

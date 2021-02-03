@@ -14,6 +14,20 @@ const Candidate = ({ image, name, description, last_update, categories }) => {
 
   const submitVote = (event) => {
     event.preventDefault();
+
+    if (unpopularity > popularity) {
+      let statusIconContainer = document.getElementById(
+        "status-icon-container"
+      );
+      statusIconContainer.className += " unpopular-container";
+    }
+    // else if (unpopularity < popularity) {
+    //   let statusIconContainer = document.getElementById(
+    //     "status-icon-container"
+    //   );
+    //   statusIconContainer.className += "";
+    // }
+
     if (vote === "yes") {
       setLikes((prevLikes) => prevLikes + 1);
     } else if (vote === "no") {
@@ -25,7 +39,7 @@ const Candidate = ({ image, name, description, last_update, categories }) => {
     <div className="candidates__card">
       <img src={image} alt={name} className="candidates__card__image" />
       <div className="candidates__card__title__wrapper">
-        <span className="candidates__thumbs-status">
+        <span id="status-icon-container" className="candidates__thumbs-status">
           <i className="far fa-thumbs-up"></i>
         </span>
         <h2 className="candidates__card__title">{name}</h2>
