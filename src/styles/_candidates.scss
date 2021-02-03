@@ -108,13 +108,13 @@
     align-items: center;
     margin-bottom: 8px;
     flex: none;
-    &__up {
+    transition: transform 0.2s ease-in;
+    &--up {
       background-color: $theme-green;
-      margin-right: 10px;
     }
-    &__down {
+    &--down {
       background-color: $theme-orange;
-      margin-right: 10px;
+      transform: rotate(180deg);
     }
   }
   &__thumbs-indicator {
@@ -164,11 +164,13 @@
       background-color: rgba($theme-green, 0.8);
       height: 50px;
       width: 50%;
+      transition: width 0.5s ease-out;
     }
     &__thumbs-down {
       background-color: rgba($theme-orange, 0.8);
       height: 50px;
       width: 50%;
+      transition: width 0.5s ease-out;
     }
   }
 }
