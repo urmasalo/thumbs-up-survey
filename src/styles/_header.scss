@@ -2,11 +2,13 @@
   justify-content: space-between;
   display: flex;
   position: relative;
+  padding-top: 19px;
 
   &__nav {
     display: flex;
     flex-direction: row;
     align-items: center;
+    padding-top: 19px;
     &__list {
       list-style: none;
       display: flex;
