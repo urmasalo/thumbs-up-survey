@@ -20,11 +20,15 @@ const Candidate = ({
 
   useEffect(() => {
     const likesFromStorage = parseInt(localStorage.getItem(`likes-${id}`));
-    setLikes(likesFromStorage);
+    if (typeof likesFromStorage > 0) {
+      setLikes(likesFromStorage);
+    }
     const dislikesFromStorage = parseInt(
       localStorage.getItem(`dislikes-${id}`)
     );
-    setDislikes(dislikesFromStorage);
+    if (typeof dislikesFromStorage > 0) {
+      setDislikes(dislikesFromStorage);
+    }
   }, [id]);
 
   useEffect(() => {
@@ -101,6 +105,7 @@ const Candidate = ({
                 className="hide candidates__card__form__radio"
               ></input>
               <label
+                data-testid="thumbs-up"
                 htmlFor={`thumbs-up-${name}`}
                 className="candidates__thumbs-indicator candidates__thumbs-indicator__up"
               >
@@ -115,6 +120,7 @@ const Candidate = ({
                 className="hide candidates__card__form__radio"
               ></input>
               <label
+                data-testid="thumbs-down"
                 htmlFor={`thumbs-down-${name}`}
                 className="candidates__thumbs-indicator candidates__thumbs-indicator__down"
               >
